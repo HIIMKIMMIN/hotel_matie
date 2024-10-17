@@ -1,0 +1,178 @@
+@media screen and (max-width: 1200px) {
+    header .gnb{display: none;}
+    .swiper-button-next{
+        top: 50%; right: 5%;
+    }
+    .swiper-button-prev{
+        top: 50%; left: 5%;
+    }
+/* 모든 요소가 화면 밖으로 빠져나가지 않도록 설정 */
+* {
+    box-sizing: border-box;  /* 패딩과 보더를 포함한 너비 계산 */
+    max-width: 100%;  /* 모든 요소의 최대 너비를 100%로 제한 */
+}
+.contents2 .contents_list{
+   height: 120vh;
+}
+.contents2 .contents_list li{
+    text-align: center;
+    margin: 0 auto;
+}
+/* .contents2 .contents_list li > img{
+    width: 300px;
+} */
+.contents2 .text1{
+    font-size: 50px;
+    margin: 0;
+}
+.contents2 .text2{
+    font-size: 100px;
+}
+.contents2 .text2:last-child{
+    margin-top: 0;
+}
+.contents2 .contents_list .list1{
+   left: 0; right: 0; top: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.contents2 .contents_list .list2{
+    left: 0; right: -60%; top: 0;
+}
+.contents2 .contents_list .list3{
+    left: 50%;
+}
+.contents2 .contents_list.img-slider .list1{
+    animation: none;
+    top: 0;
+}
+.contents2 .contents_list.img-slider .list2{
+    animation: none;
+    top: 200px;
+}
+.contents2 .contents_list.img-slider .list3{
+    animation: none;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contents2 .contents_list .list1 .text_area{
+   right: 30%; bottom: 30%;
+   z-index: 10;
+}
+.contents2 .contents_list .list2 .text_area{
+    left: -30%; right: 0; bottom: 20%;
+}
+.contents2 .contents_list .list3 .text_area{
+   left: 0; right: 0; bottom: 0;
+}
+
+}
+@media screen and (max-width:768px) {
+    .util{
+        margin-top: 0;
+        flex-direction: column; 
+        width: 60%;
+        margin: 0 auto;
+    }
+    .util li+li{margin-top: 100px;}
+
+    header .logo{
+        width: 12%;
+    }
+    header .gnb{
+        width: 68%;
+    }
+    header a.menu{
+        width: 8%;
+    }
+    .main_visual{
+        width: 90%;
+        height: 40vh;
+        margin: 50px auto 400px;  
+    }
+    .contents2 .text1{
+        font-size: 80px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .contents1 .contents_list{
+        flex-direction: column;
+    }
+    .contents1 .contents_list li{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .contents2 .contents_list{
+       height: 120vh;
+    }
+    .contents2 .contents_list li{
+        text-align: center;
+        /* width: 100%; */
+        margin: 0 auto;
+    }
+    .contents2 .contents_list li > img{
+        width: 300px;
+    }
+    .contents2 .text1{
+        font-size: 50px;
+        margin: 0;
+    }
+    .contents2 .text2{
+        font-size: 100px;
+    }
+    .contents2 .text2:last-child{
+        margin-top: 0;
+    }
+    .contents2 .contents_list .list1{
+       left: 0; right: 0; top: 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    .contents2 .contents_list .list2{
+        left: 0; right: -300px; top: 0;
+    }
+    .contents2 .contents_list .list3{
+        left: 50%; top: 0;
+    }
+    .contents2 .contents_list.img-slider .list1{
+        animation: none;
+        top: 0;
+    }
+    .contents2 .contents_list.img-slider .list2{
+        animation: none;
+        top: 200px;
+    }
+    .contents2 .contents_list.img-slider .list3{
+        animation: none;
+        top: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contents2 .contents_list .list1 .text_area{
+        left: 0; right: -30%; bottom: -30px;
+    }
+    .contents2 .contents_list .list2 .text_area{
+        left: -30%; right: 0; bottom: 0;
+    }
+    .contents2 .contents_list .list3 .text_area{
+       left: 0; right: 0; bottom: 0;
+    }
+    
+    .sc_visual .title_text{font-size: 30px;}
+    .contents3 .contents_wrap ul{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .contents3 .contents_wrap ul li{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 576px) { 
+
+}

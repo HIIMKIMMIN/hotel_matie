@@ -1,0 +1,306 @@
+@charset "utf-8";
+.wrap_contents{
+    width: 100%;
+    margin: 0 auto;
+}
+.wrap_contents > h2{
+    padding-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+.wrap_contents #filter_btn{
+    padding-left: 15%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    color: #0E374F;
+}
+.wrap_contents #filter_btn img{
+    margin-right: 10px;
+    width: 35px; height: 35px;
+    object-fit: cover;
+}
+.wrap_contents #filter_btn span{
+    border-bottom: 1px solid #0E374F;
+    padding-top: 3px;
+}
+
+
+.room_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+}
+.room_list li{
+    width: 49%;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.room_list li img{
+    width: 100%;
+    object-fit: cover;
+}
+.room_list li .text_area{
+    text-align: center;
+}
+.room_list li .text_area span{
+    color: #FE6E00;
+    margin-top: 30px;
+    display: block;
+    font-size: 18px;
+    font-family: "Lora", serif;
+}
+.room_list li .text_area h3{
+    color: #0E374F;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: "Lora", serif;
+    font-weight: 500;
+}
+.room_list li .text_area p.room_count{
+    color: #0e374fd1;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.room_list li .text_area p.room_info{
+    color: #0e374f;
+    margin-top: 25px;
+    font-size: 18px;
+}
+#more_btn{
+    display: block;
+    width: 20%;
+    text-align: center;
+    margin: 50px auto 0;
+    position: relative;
+}
+.more_btn_area .border_area{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.more_btn_area .border_area div:first-child{
+    width: 48%;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background: #0E374F80;
+}
+.more_btn_area .border_area div:last-child{
+    width: 48%;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    background: #0E374F80;
+}
+.more_btn_area .border_area span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* CSS - 모달 스타일 */
+.modal {
+    display: none; /* 처음에 모달을 숨김 */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+}
+
+.modal_content {
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #888;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#close_btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close_btn:hover,
+#close_btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 버튼 클릭 시 색상 변경 */
+.place-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.place-btn.active {
+    background-color: #0E374F;
+    color: #fff;
+}
+
+/* 업/다운 버튼 스타일 */
+.number-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+}
+.number-input button {
+    background-color: #0E374F;
+    color: #fff;
+    border: none;   
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.number-input input {
+    width: 60%;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* 슬라이더 스타일 */
+.room_size input[type="range"] {
+    -webkit-appearance: none; /* 기본 스타일 제거 (크롬, 사파리) */
+    appearance: none; /* 기본 스타일 제거 (모든 브라우저) */
+    width: 100%;
+    margin: 10px 0;
+    background: linear-gradient(to right, #0E374F 0%, #0E374F 50%, white 50%, white 100%);
+    height: 6px; /* 슬라이드바 두께 */
+    border-radius: 5px; /* 슬라이드바 끝을 둥글게 */
+    outline: none; /* 포커스 시 아웃라인 제거 */
+}
+
+.room_size input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* 핸들 크기 */
+    height: 20px; /* 핸들 크기 */
+    background-color: #0E374F; /* 핸들 색상 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.2s ease; /* 클릭 시 부드러운 효과 */
+}
+
+.room_size input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #0E374F;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+/* 슬라이더 핸들 클릭 시 외부 그림자 효과 */
+.room_size input[type="range"]:active::-webkit-slider-thumb {
+    box-shadow: 0 0 15px rgba(14, 55, 79, 0.5); /* 클릭 시 원형 그림자 */
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+.range-labels span{
+    position: relative;
+}
+.filter_content{
+    padding: 10% 5%;
+}
+.filter_content form{
+    margin-bottom: 50px;
+}
+.filter_content label{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.filter_content  .btn_area{
+    display: flex;
+    justify-content: center;
+}
+.filter_content  .btn_area button{
+    border: 1px solid #0E374F;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.filter_content  .btn_area button+button{
+    background: #0E374F;
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+/* 새로운 모달 스타일 */
+.cont_modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    left: 0; top: 0;
+    background-color: #fff;
+    max-width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.cont_modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* 오버레이 스타일 */
+.dynamic-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}

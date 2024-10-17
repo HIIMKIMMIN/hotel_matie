@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap_header">
+            <header>
+                <a class="logo" href="index.html"><img src="img/logo-w.svg" alt=""></a>
+                <ul class="gnb">
+                    <li><a href="aboutUs.html">About us</a></li>
+                    <li><a href="reservation.html" class="on" >예약</a></li>
+                    <li><a href="room.html" >객실</a></li>
+                    <li><a href="specialOffer.html">스페셜 오퍼</a></li>
+                    <li><a href="amenity.html">어메니티</a></li>
+                    <li><a href="hLiveClub.html">H-LIVE CLUB</a></li>
+                </ul>
+                <button class="menu"></button>
+                <div class="click_menu_util">
+                    <ul>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">예약확인</a></li>
+                        <li><a href="">H-LIVE Club</a></li>
+                        <li><a href="">앱다운로드</a></li>
+                        <li><a href="">고객센터</a></li>
+                        <li><a href="">사이트맵</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <div class="contents">
+            <p>Welcome to Hotel MATIÈ</p>
+            <h2>Login</h2>
+            <figure><img src="img/login.png" alt=""></figure>
+            <div class="tab_menu">
+                <a href="" class="on">회원</a>
+                <a href="">비회원</a>
+            </div>
+            <ul class="membership_tab">
+                <li class="active">
+                    <form action="id" class="form_design01">
+                        <label for="id">아이디</label>
+                        <input type="email" placeholder="이메일 주소를 입력해주세요.">
+                    </form>
+                    <form action="pw" class="form_design01">
+                        <label for="pw">비밀번호</label>
+                        <input type="password" placeholder="비밀번호를 입력해주세요.">
+                    </form>
+                    <form class="form_design02">
+                        <input type="checkbox">
+                        <label for="id_save">아이디 저장</label>
+                        <input type="checkbox">
+                        <label for="auto_login">자동 로그인</label>
+                    </form>
+                    <button id="btn_login">로그인</button>
+                    <div class="link_menu">
+                        <a href="">회원가입</a>
+                        <a href="">아이디 찾기</a>
+                        <a href="">비밀번호 찾기</a>
+                    </div>
+                </li>
+                <li>
+                    <form action="name" class="form_design01">
+                        <label for="name">이름</label>
+                        <input type="text" placeholder="성함을 입력해주세요.">
+                    </form>
+                    <form action="tel" class="form_design01">
+                        <label for="tel">휴대폰 번호</label>
+                        <input type="tel" placeholder="010-xxxx-xxxx">
+                    </form>
+                    <form action="code" class="form_design01">
+                        <label for="code">인증 번호</label>
+                        <input type="text" maxlength="6" placeholder="인증번호 6자리를 입력하세요.">
+                        <!-- <button>확인</button> -->
+                    </form>
+                    <!-- <form action="agree" class="form_design01">
+                        <input type="checkbox">
+                        <label for="agree">개인정보 수집 및 활용 동의 (필수)</label>
+                        <p>
+                            개인정보 수집·이용 동의 <br>
+                            · 수집항목: 성함, 휴대폰 번호 <br>
+                            · 수집·이용목적: <br>
+                            - 콘도 예약 안내 및 관리 <br>
+                            - 콘도 서비스 이용에 따른 본인 식별,  유실물 및 안전사고 발생 시 연락망 확보, 주차관리 <br>
+                            · 보유 및 이용 기간: 예약 및 투숙 후 5년
+                            ※비회원 로그인 후 예약 미이용 시 별도 보관하는 정보는 없음 <br><br>
+                            위의 내용을 거부할 수 있으며 거부할 시 예약 진행이 불가함을 알려드립니다.
+                        </p>
+                    </form> -->
+                    <button id="btn_login">로그인</button>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div class="left_side">
+                <div>
+                    <p>한화호텔앤드리조트㈜ 대표 : 김형조</p>
+                    <p>서울특별시 중구 소공로 119, 6~8층 04525</p>
+                    <p>사업자등록번호 : 101-81-30747</p>
+                    <p>통신판매업신고 : 2024-서울중구-0776</p>
+                    <p>Copyright@ Hanwha Hotels & Resorts. All Rights Reserved.</p>
+                </div>
+                <div>
+                    <p>이용약관</p>
+                    <p>개인정보 처리방침</p>
+                    <p>영상정보처리기기 운영·관리 방침</p>
+                    <p>고객의 소리함</p>
+                    <p>고객센터 1588-2299</p>
+                </div>
+            </div>
+            <div class="right_side">
+                <ul>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">마티에소개</a></li>
+                    <li><a href="">인재채용</a></li>
+                </ul>
+                <div>
+                    <div class="sns">
+                        <a href=""><img src="img/sns-instagram.svg" alt=""></a>
+                        <a href=""><img src="img/sns-youtube.svg" alt=""></a>
+                    </div>
+                    <select name="site" id="site">
+                        <option value="">패밀리사이트</option>
+                        <option value="">한화그룹</option>
+                        <option value="">한화리조트</option>
+                        <option value="">한화리조트</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/reservation.js"></script>
+</body>
+</html>

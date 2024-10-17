@@ -1,0 +1,107 @@
+.contents{
+    padding-top: 200px;
+    text-align: center;
+    color: #0E374F;
+
+}
+.contents p{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: "Lora", serif;
+    opacity: 0.6;
+}
+.contents h2{
+    font-size: 45px;
+    font-family: "Lora", serif;
+    margin-bottom: 50px;
+}
+.contents figure{
+    margin-bottom: 100px
+}
+.contents .membership_tab{ 
+    /* display: none; */
+    width: 500px;
+    margin: 0 auto;
+}
+.contents .tab_menu{
+    margin-bottom: 50px;
+    width: 500px;
+    margin: 0 auto 50px;
+    text-align: left;
+}
+.contents .tab_menu a{
+    padding-bottom: 10px;
+    margin: 0 10px 10px 0;
+    font-size: 20px;
+    display: inline-block;
+    color: #0e374fac;
+}
+.contents  .tab_menu a:hover{
+    color: #0E374F;
+    border-bottom: 1px solid #0E374F;
+}
+.contents  .tab_menu a.on{
+    border-bottom: 1px solid #0E374F;
+    color: #0E374F;
+}
+.contents .membership_tab li{
+    display: none;
+}
+.contents .membership_tab li.active{
+    display: block;
+}
+.contents .membership_tab li form.form_design01{
+    width: 100%;
+}
+.contents .membership_tab li form.form_design01 label{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: left;
+    color: #0E374F;
+}
+.contents .membership_tab li form.form_design01 input{
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid #0E374F;
+    font-size: 18px;
+    padding: 2%;
+    color: #0e374fac;
+}
+.contents .membership_tab li form.form_design02{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.contents .membership_tab li form.form_design02 input{
+    width: 20px; height: 20px;
+    margin-right: 10px;
+}
+.contents .membership_tab li form.form_design02 label{
+    font-size: 16px;
+    margin-right: 30px;
+}
+.contents .membership_tab li form.form_design02 p{
+    display: block;
+    text-align: left;
+}
+.contents .membership_tab li #btn_login{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0E374F;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.contents .membership_tab li .link_menu a+a{
+    /* display: inline-block; */
+    margin-left: 15px;
+}
+.contents .membership_tab li .link_menu a:hover{
+    border-bottom: 1px solid #0E374F;
+}
