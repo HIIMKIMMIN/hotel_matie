@@ -1,0 +1,20 @@
+@media screen and (max-width: 768px) {
+.all_contents ul li:nth-child(2n+1) a {
+    width: 90%; /* 콘텐츠가 왼쪽에서 90%만 차지 */
+    margin-right: 10%; /* 오른쪽에 10% 공백 */
+}
+.all_contents ul li:nth-child(2n) a {
+    width: 90%; /* 콘텐츠가 오른쪽에서 90%만 차지 */
+    margin-left: 10%; /* 왼쪽에 10% 공백 */
+}
+.all_contents ul li a .text_area{
+    width: 30.5%;
+}
+.all_contents ul li a img{
+    width: 58.5%;
+    order: 1; /* 기본 순서 */
+}
+.all_contents .text_area h3{
+    font-size: 30px;
+}
+}

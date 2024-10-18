@@ -12,6 +12,7 @@ body {
 .slide_menu{
     display: none;
 }
+/* header */
 header{
     background: url(../img/home-bg.png) no-repeat top;
     width: 100%;
@@ -50,10 +51,10 @@ header .menu{
     background: url(../img/menu.svg) no-repeat center/contain;
 
 }
-/* header */
 
 
 
+/* fixed-header */
 header.fixed-header{
     height: 70px;
     animation: slide-down 0.5s;   
@@ -82,7 +83,7 @@ header.fixed-header{
         /* transform: translateY(0); */
     } 
 }
-/* fixed-header */
+
 
 
 /* click_menu_util */
@@ -196,4 +197,62 @@ footer .right_side select{
 }
 footer .right_side .site{
     width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+    /* 모든 요소가 화면 밖으로 빠져나가지 않도록 설정 */
+        * {
+            box-sizing: border-box;  /* 패딩과 보더를 포함한 너비 계산 */
+            max-width: 100%;  /* 모든 요소의 최대 너비를 100%로 제한 */
+        }
+}
+
+@media screen and (max-width:996px) {
+    header.clickMenu{
+        height: 70vh;
+    }
+    .click_menu_util.on{
+        bottom: -70vh;
+        height: 30vh;
+    }
+    header .gnb{display: none;}
+    .click_menu_util.on ul{
+        flex-direction: column;
+    }
+    .click_menu_util.on ul li{
+        margin-bottom: 10px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .left_side{
+        width: 100%;
+        height: auto;
+    }
+    footer .right_side{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width:768px) {
+    .util{
+        margin-top: 0;
+        flex-direction: column; 
+        width: 60%;
+        margin: 0 auto;
+    }
+    .util li+li{margin-top: 100px;}
+
+    header .logo{
+        width: 12%;
+    }
+    header .gnb{
+        width: 68%;
+    }
+    header a.menu{
+        width: 8%;
+    }
+}
+@media screen and (max-width: 576px) { 
+
 }

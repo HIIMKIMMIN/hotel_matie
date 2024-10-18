@@ -79,3 +79,144 @@
 .hotel_select.active::after {
     transform: translateY(-50%) rotate(180deg); /* 180도 회전 */
 }
+
+
+
+/* nav.amenity_tab */
+nav.amenity_tab ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 100px auto;
+}
+nav.amenity_tab ul li a{
+    display: block;
+    color: #11111180;
+    position: relative;
+}
+nav.amenity_tab ul li a:hover{
+    color: #111;
+}
+nav.amenity_tab ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -10px; left: 0;
+    width: 100%; height: 1px;
+    background: #111;
+    transform: scaleX(0);
+}
+nav.amenity_tab ul li a:hover::after{
+    transform: scaleX(1);
+    transition: all 0.3s;
+}
+nav.amenity_tab ul li a.on{
+    color: #111;
+}
+nav.amenity_tab ul li a.on::after{
+    content: '';
+    position: absolute;
+    bottom: -10px; left: 0;
+    width: 100%; height: 1px;
+    background: #111;
+    transform: scaleX(1);
+}
+
+
+
+/* sec_1 */
+.all_contents ul{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+.all_contents ul li {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    width: 100%; /* ul의 전체 너비를 100%로 설정 */
+}
+
+/* 홀수 번째 항목 (왼쪽에 70% 영역, 오른쪽에 30% 공백) */
+.all_contents ul li:nth-child(2n+1) {
+    justify-content: flex-start; /* 왼쪽 정렬 */
+}
+
+.all_contents ul li:nth-child(2n+1) a {
+    width: 70%; /* 콘텐츠가 왼쪽에서 70%만 차지 */
+    margin-right: 30%; /* 오른쪽에 30% 공백 */
+}
+
+/* 짝수 번째 항목 (오른쪽에 70% 영역, 왼쪽에 30% 공백) */
+.all_contents ul li:nth-child(2n) {
+    justify-content: flex-end; /* 오른쪽 정렬 */
+}
+
+.all_contents ul li:nth-child(2n) a {
+    width: 70%; /* 콘텐츠가 오른쪽에서 70%만 차지 */
+    margin-left: 30%; /* 왼쪽에 30% 공백 */
+}
+
+.all_contents ul li a{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.all_contents ul li a img{
+    width: 48.5%;
+    order: 1; /* 기본 순서 */
+}
+
+.all_contents ul li a .text_area{
+    width: 45.5%;
+    order: 2; /* 기본 순서 */
+    text-align: left;
+}
+
+/* 짝수 번째 항목일 때 순서 반전 */
+.all_contents ul li:nth-child(2n) a img {
+    order: 2; /* 이미지가 두 번째로 배치됨 */
+}
+
+.all_contents ul li:nth-child(2n) a .text_area {
+    order: 1; /* 텍스트가 첫 번째로 배치됨 */
+    text-align: right;
+}
+
+.all_contents .text_area > span{
+    color: #FE6E00;
+    font-size: 14px;
+    font-family: "Lora", serif;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.all_contents .text_area h3{
+    color: #0E374F;
+    font-size: 50px;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.all_contents .text_area p.main_text{
+    color: #0E374F;
+    font-size: 20px;
+    /* font-family: "Lora", serif; */
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.all_contents .text_area .more_btn{
+    border: 1px solid #0E374F;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.all_contents .text_area .sub_text{
+    color: #11111180;
+    font-size: 16px;
+}

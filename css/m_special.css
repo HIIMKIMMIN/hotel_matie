@@ -1,0 +1,5 @@
+@media screen and (max-width:768px){
+    .offer_list li{
+        width: 100%;
+    }
+}

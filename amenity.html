@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마티에-객실</title>
+    <title>마티에-어메니티</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/amenity.css">
+    <link rel="stylesheet" href="css/m_amenity.css">
     <link rel="stylesheet" href="css/all.css">
     <script src="js/jquery-3.7.1.min.js"></script>
 </head>
@@ -20,7 +21,7 @@
                     <li><a href="room.html" >객실</a></li>
                     <li><a href="specialOffer.html">스페셜 오퍼</a></li>
                     <li><a href="Amenity.html" class="on">어메니티</a></li>
-                    <li><a href="hLiveClub.html">H-LIVE CLUB</a></li>
+                    <li><a href="https://hlive.hanwharesort.co.kr/content/h_live.do" target="_blank">H-LIVE CLUB</a></li>
                 </ul>
                 <button class="menu"></button>
                 <div class="click_menu_util">
@@ -39,38 +40,168 @@
         <div class="wrap_contents">
             <h2>어메니티</h2>
             <div class="hotel_select">
-                <div class="hotel_select_trigger">마티에 오시리아</div>
+                <div class="hotel_select_trigger">호텔 선택</div>
                 <ul name="hotel_name" class="hotel_name">
                     <li class="hotel_list" data-value="마티에 오시리아">마티에 오시리아</li>
                     <!-- <li class="hotel_list" data-value="다른 호텔">다른 호텔</li> -->
                 </ul>
             </div>
-            <nav>
+            <nav class="amenity_tab">
                 <ul>
-                    <li><a href="">전체</a></li>
+                    <li><a href="" class="on">전체</a></li>
                     <li><a href="">액티비티</a></li>
                     <li><a href="">다이닝</a></li>
                     <li><a href="">편의시설</a></li>
                 </ul>
             </nav>
-            <div class="sec_1">
+            <div class="all_contents">
                 <ul>
-                    <li>
+                    <li class="dining">
+                        <a href="">
+                            <img src="img/amenity(5).png" alt="">
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>Golden Lizzy</h3>
+                                <p class="main_text">
+                                    골든 리지
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    All Day Dinning
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dining">
+                        <a href="">
+                            <img src="img/amenity(3).png" alt="">
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>ALLICK</h3>
+                                <p class="main_text">
+                                    올릭
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    레스토랑
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="amenity">
+                        <a href="">
+                            <img src="img/amenity(6).png" alt="">
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>MATIE POOL</h3>
+                                <p class="main_text">
+                                    마티에 풀
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    Exotic Place
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="amenity">
+                        <a href="">
+                            <img src="img/amenity(2).png" alt="">
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>SOCAR</h3>
+                                <p class="main_text">
+                                    쏘카
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    Car Sharing
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="amenity">
+                        <a href="">
+                            <img src="img/amenity(9).png" alt="">
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>GREEN CAR</h3>
+                                <p class="main_text">
+                                    그린카
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    Car Sharing
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="amenity">
+                        <a href="">
+                            <img src="img/amenity(7).png" alt="">
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>MATIE BOOKSTAY</h3>
+                                <p class="main_text">
+                                    마티에 북 스테이
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    by. 주책공사
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="amenity">
+                        <a href="">
+                            <img src="img/amenity(4).png" alt="">
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>COIN RAUNDRY</h3>
+                                <p class="main_text">
+                                    코인 런드리
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    Coin Raundry
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class=" amenity">
+                        <a href="">
+                            <img src="img/amenity(8).png" alt="">
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>MATIE ROUNGE</h3>
+                                <p class="main_text">
+                                    마티에 라운지
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    Take a Rest
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="amenity">
                         <a href="">
                             <img src="img/amenity(1).png" alt="">
-                            <span>MATIE OSIRIA</span>
-                            <h3>Golden Lizzy</h3>
-                            <p class="main_text">
-                                골든 리지
-                                <span class="more_btn">+</span>
-                            </p>
+                            <div class="text_area">
+                                <span>MATIE OSIRIA</span>
+                                <h3>Forum</h3>
+                                <p class="main_text">
+                                    포럼
+                                    <span class="more_btn">+</span>
+                                </p>
+                                <p class="sub_text">
+                                    Special Day
+                                </p>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="sec_2"></div>
-            <div class="sec_3"></div>
-            <div class="sec_4"></div>
         </div>
         <footer>
             <div class="left_side">
